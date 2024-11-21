@@ -1,0 +1,15 @@
+.ResponsiveTest {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    /* justify-content: space-around; */
+    /* padding-left: 20px; */
+    /* font-size: 2rem; */
+    /* text-align: center; */
+    color: black;
+    background-color: darkkhaki;
+    z-index: 99999;
+}

@@ -1,0 +1,17 @@
+.Skills {}
+
+
+.Skills svg {
+    fill: #444;
+    /* width: 200px; */
+    /* width: 200px; */
+    height: auto;
+    display: inline-block;
+    margin: 20px;
+    transform: scale(.9);
+    transition: all .3s;
+    &:hover {
+        fill: #d4d4d4;
+        transform: scale(1);
+    }
+}

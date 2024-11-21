@@ -1,0 +1,357 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 18px;
+
+  color-scheme: light dark;
+  /* color: rgba(255, 255, 255, 0.87); */
+  background-color: hsl(0, 0%, 14%);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+::selection {
+  color: black;
+  background: white;
+}
+
+/* section {
+  padding-block: 100px;
+} */
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  /*Positionthetooltip*/
+  position: absolute;
+  z-index: 1;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.tooltip :first-child:hover+.tooltiptext {
+  visibility: visible;
+}
+
+img {
+  pointer-events: none;
+}
+
+/* a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+} */
+
+a:hover {
+  color: #535bf2;
+}
+
+/* input, textarea {
+  padding-inline: 10px;
+  background: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, .3);
+} */
+
+
+.inputField {
+  position: relative;
+  width: 100%;
+}
+
+/* تنسيق input و textarea */
+.inputField input,
+.inputField textarea {
+  width: 100%;
+  font-size: 18px;
+  padding: 0 10px;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  background: transparent;
+  outline: none;
+  color: #fff;
+}
+
+/* تخصيص ارتفاع input و textarea */
+.inputField input {
+  height: 3.5rem;
+}
+
+.inputField textarea {
+  padding-top: 1.2rem;
+  /* لتجنب تداخل اللِّيبل */
+  resize: vertical;
+}
+
+.inputField input:focus,
+.inputField textarea:focus {
+  border-color: rgba(255, 255, 255, 1);
+
+}
+
+/* تنسيق label */
+.inputField label {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.3s;
+  /* color: #fff; */
+}
+
+/* تأثير التركيز والتعبئة */
+.inputField input:focus~label,
+.inputField input:not(:placeholder-shown)~label,
+.inputField textarea:focus~label,
+.inputField textarea:not(:placeholder-shown)~label {
+  top: 0;
+  font-size: 12px;
+  padding: 0 10px;
+  background: #000;
+  /* color: #fff; */
+}
+
+
+
+
+
+body {
+  margin: 0;
+  color: #c2c2c2;
+  background: #000;
+}
+
+h1 {
+  /* font-size: 3.2em; */
+  line-height: 1.1;
+  color: #fff;
+}
+
+h2 {
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.has-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  vertical-align: middle;
+  /*font-weight: 400;
+  */
+  /*border: 2px solid #fff;
+  */
+  border-width: 2px;
+  border-style: solid;
+  padding-inline: 8px;
+  padding-block: unset;
+  width: fit-content;
+  border-radius: 9999px;
+  transition: all .2s ease;
+  &:hover {
+    transform: translateY(-3px);
+  }
+}
+
+.btn-primary {
+  color: #000;
+  fill: #000;
+  background: #fff;
+  border-color: #fff;
+
+  &:hover {
+    color: #fff;
+    fill: #fff;
+    background: #000;
+    border-color: #fff;
+  }
+
+}
+
+.btn-secondary {
+  color: #fff;
+  fill: #fff;
+  background: #000;
+  border-color: #fff;
+
+  &:hover {
+    color: #000;
+    fill: #000;
+    background: #fff;
+    border-color: #fff;
+  }
+
+}
+
+
+
+.labels span {
+  /* margin: 10px 10px 10px 0; */
+  font-size: 16px;
+  color: #000;
+  background: #d4d4d4;
+  padding: 3px;
+  /* white-space: nowrap; */
+  border-radius: 5px;
+  /* font-weight: 500; */
+
+}
+
+/* .online {
+  animation: online 5s ease-in-out infinite alternate;
+  -webkit-animation: online 5s ease-in-out infinite alternate;
+}
+
+@keyframes online {
+
+    from { opacity: '1' }
+
+    to { opacity: '0' }
+
+} */
+
+
+.title-box {
+  /* height: 100vh; */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  /* align-items: center; */
+  /* height: auto; */
+  color: #fff;
+  overflow: hidden;
+  /* transform-origin: bottom left; */
+}
+
+.title-box .title {
+  /* font-size: 200px; */
+  font-size: 12vw;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.title-box .sub-title {
+  font-weight: 500;
+}
+
+.title:after {
+  content: attr(data-content);
+  display: block;
+  /* للتأكد من ظهور المحتوى */
+  color: transparent;
+  /* مثلا */
+  font-size: 144px;
+  -webkit-text-stroke: 2px white;
+  /* Adding Stroke to Web Text */
+  font-weight: 800;
+  position: absolute;
+  top: -30px;
+  right: -20px;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+
+
+.div1,
+.div2,
+.div3 {
+  height: 100vh;
+}
+
+.div1 {
+  background-color: pink;
+}
+
+
+.div3 {
+  background-color: salmon;
+}
+
+.square {
+  width: 150px;
+  height: 150px;
+  background-color: fuchsia;
+}
+
+.square2 {
+  width: 150px;
+  height: 150px;
+  background-color: green;
+}

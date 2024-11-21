@@ -1,0 +1,37 @@
+{
+    "data" : [
+        {
+            "name" : "Disney Plus Clone",
+            "description" : "This project aims to replicate the Disney Plus website using React and other web technologies. It includes features such as user authentication, browsing movies and shows, and viewing detailed information about each content item.",
+            "technologies" : ["React JS", "Styled Components", "Redux", "Firebase"],
+            "image" : "https://res.cloudinary.com/dpeaw3rl5/image/upload/v1732128660/project-1_uh2wa7.png",
+            "links" : {
+                "github" : "https://github.com/HussamSalah399/disney-plus-clone",
+                "live" : "https://disneyplus-clone-82710.firebaseapp.com"
+            }
+        },
+
+        {
+            "name" : "Freshcart E-commerce",
+            "description" : "Freshcart is a comprehensive e-commerce application built using React and Redux. The project aims to provide an easy-to-use and scalable online shopping platform.",
+            "technologies" : ["React", "Redux Toolkit", "React Router DOM", "Axios", "Bootstrap", "Formik", "Yup", "React Helmet", "React Hot Toast", "React Loader Spinner", "React Query", "React Slick", "FontAwesome"],
+            "image" : "https://res.cloudinary.com/dpeaw3rl5/image/upload/v1732128624/project_kljek0.jpg",
+            "links" : {
+                "github" : "https://github.com/HussamSalah399/freshcart-ecommerce",
+                "live" : "https://hussamsalah399.github.io/freshcart-ecommerce"
+            }
+        },
+
+        {
+            "name" : "Mealify",
+            "description" : "Mealify is a restaurant website project designed using only HTML and CSS. The website has a visually appealing and fully responsive user interface with a list of available meals and contact details for customers.",
+            "technologies" : ["HTML", "CSS", "FontAwesome"],
+            "image" : "https://res.cloudinary.com/dpeaw3rl5/image/upload/v1732128642/project-2_hn7vj4.png",
+            "links" : {
+                "github" : "https://github.com/HussamSalah399/mealify",
+                "live" : "https://hussamsalah399.github.io/mealify"
+            }
+        }
+    ]
+
+}
