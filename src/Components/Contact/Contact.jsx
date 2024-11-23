@@ -31,8 +31,8 @@ function Contact() {
       }
     });
 
-    tl.from(".title-box .git-in", { xPercent: -100, scale: 2, duration: 1 }, 'start')
-      .from('.title-box .touch', { xPercent: 80, scale: 2, duration: 1 }, 'start')
+    tl.from(".title-box .git-in", { xPercent: -100, duration: 1 }, 'start')
+      .from('.title-box .touch', { xPercent: 80, duration: 1 }, 'start')
     // .from( '.title-box p', {y: 150, duration: 1} )
 
   }, { scope: containerRef });

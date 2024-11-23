@@ -32,8 +32,8 @@ function Skills() {
       }
     });
 
-    tl.from(".title-box .my", { xPercent: -100, scale: 2, duration: 1 }, 'start')
-      .from('.title-box .skills', { xPercent: 80, scale: 2, duration: 1 }, 'start')
+    tl.from(".title-box .my", { xPercent: -100, duration: 1 }, 'start')
+      .from('.title-box .skills', { xPercent: 80, duration: 1 }, 'start')
       .from('.title-box p', { y: 150, duration: 1 })
 
   }, { scope: containerRef });

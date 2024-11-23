@@ -34,8 +34,8 @@ function About() {
     });
 
 
-    tl.from(".title-box .about", { xPercent: -100, scale: 2, duration: 2, ease: "power2.out" }, 'start')
-      .from('.title-box .me', { xPercent: 100, scale: 2, duration: 2, ease: "power2.out" }, 'start')
+    tl.from(".title-box .about", { xPercent: -100, duration: 2, ease: "power2.out" }, 'start')
+      .from('.title-box .me', { xPercent: 100, duration: 2, ease: "power2.out" }, 'start')
       .from('.title-box p', { y: 200, opacity: 0, duration: 5, ease: "power2.out" })
 
     // .to(".title-box", { scale: .3, duration: 2})
