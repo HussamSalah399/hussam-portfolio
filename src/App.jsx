@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useLayoutEffect } from 'react'
 import './App.css'
 import Header from './Components/Header/Header'
 import InfiniteScroll from './Components/InfiniteScroll/InfiniteScroll'
@@ -36,6 +36,16 @@ gsap.ticker.add((time) => {
 
 // Disable lag smoothing in GSAP to prevent any delay in scroll animations
 gsap.ticker.lagSmoothing(0);
+
+useLayoutEffect(() => {
+  const loadedHandler = () => {
+    ScrollTrigger.refresh();
+  };
+
+  window.addEventListener('load', loadedHandler);
+
+  return () => window.removeEventListener('load', loadedHandler);
+});
 
 
 

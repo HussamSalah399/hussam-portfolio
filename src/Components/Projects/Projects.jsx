@@ -64,6 +64,8 @@ function Projects() {
             <div className="relative group hover:bg-white transition duration-300" key={index}>
               <a className='text-[6vw] block mb-3 -border-b hover:translate-x-5 group-hover:text-black transition duration-300' href={links.live} target='_blank'><span className='text-sm'>[{index}]</span> {name}</a>
               <img src={image} alt={name} loading='lazy' className='absolute top-0 right-0 z-10 w-1/2 transition duration-300 -translate-y-1/2 opacity-0 group-hover:opacity-100' />
+
+
               {/* <p className='text-2xl'>{description}</p> */}
               {/* <div className="flex flex-wrap gap-2 mb-10 cursor-default labels">
                   {technologies.map((technology)=> <span>{technology}</span> )}

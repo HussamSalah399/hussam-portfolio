@@ -56,9 +56,9 @@ function Header() {
     >
       <div className="w-full h-full bg-[#0d0d0d] rounded-[24px] ">
 
-        <div className="flex flex-col items-center w-full h-full md:flex-row -bg-red-900">
+        <div className="flex flex-col items-center w-full h-full md:flex-row md:flex-nowrap -bg-red-900">
 
-          <div className="hero-left mt-20 ml-5 md:mt-0 md:min-w-1/2 h-full text-3xl -bg-lime-800 flex flex-col justify-center gap-5 [&_div]:overflow-hidden text-white">
+          <div className="hero-left mt-20 pl-5 md:mt-0  -md:absolute h-full text-3xl -bg-lime-800 flex flex-col justify-center gap-5 [&_div]:overflow-hidden text-white">
 
             <div>
               <span className="hello">
@@ -118,14 +118,17 @@ function Header() {
             {/* <p className='relative top-5'>My name is</p> */}
           </div>
 
-          <div className='hero-right mx-auto md:w-1/2 md:self-end -bg-slate-950'>
+          <div className='hero-right mx-auto h-full -bg-slate-950'>
             <img
               src={hussam3DImg}
               alt="Hussam 3d image"
-              className="object-cover max-h-full w-full "
+              loading='lazy'
+              className="object-contain object-bottom w-full h-[450px] md:h-full -bg-orange-400 "
             />
 
           </div>
+
+
           {/* <InfiniteScroll /> */}
         </div>
 

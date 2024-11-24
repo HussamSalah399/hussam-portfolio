@@ -51,7 +51,7 @@ function Skills() {
           <p>Discover my skills and see how I can elevate your project!</p>
         </div>
 
-        <div className="my-skills my-10 flex items-center justify-center flex-wrap pb-5 [&_svg]:w-[150px]">
+        <div className="my-skills my-10 flex items-center justify-center flex-wrap pb-5 [&_svg]:w-[150px] [&_svg]:h-[150px]">
           {/* <img src={htmlIcon} alt="" width={100} /> */}
 
           <div className="html tooltip">
