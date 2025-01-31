@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './About.module.css';
-import hussamImg from '../../assets/images/hussam2.png';
-import hussamVideo from '../../assets/images/video.mp4';
+import hussamImg from '../../assets/images/hussam.jpg';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -11,9 +10,9 @@ import useIsMobileWidth from '../../hooks/useIsMobileWidth';
 gsap.registerPlugin(ScrollTrigger);
 
 function About() {
-  
+
   const isMobileWidth = useIsMobileWidth();
-  
+
   const containerRef = useRef();
   const titleBoxRef = useRef();
 
@@ -62,23 +61,19 @@ function About() {
         <div className="flex flex-col-reverse gap-5 mt-5 md:mt-10 md:flex-row -bg-lime-900">
 
           <div className="animated-text md:w-1/2">
-          Hi, I’m Hussam Salah, a {CurrentYear - 1999}-year-old front-end developer based in Cairo, Egypt. Despite my background in accounting and graduating from Cairo University in 2022, my passion for web design and development led me to shift careers. I specialize in creating modern, interactive, and visually appealing user interfaces using technologies like React and GSAP. Problem-solving, animations, and responsive designs are at the heart of my work. I love crafting experiences that not only look good but feel seamless. Outside of coding, I’m always exploring new design trends and leveling up my skills to stay ahead in this ever-evolving field.
+            Hi, I’m Hussam Salah, a {CurrentYear - 1999}-year-old front-end developer based in Cairo, Egypt. Despite my background in accounting and graduating from Cairo University in 2022, my passion for web design and development led me to shift careers. I specialize in creating modern, interactive, and visually appealing user interfaces using technologies like React and GSAP. Problem-solving, animations, and responsive designs are at the heart of my work. I love crafting experiences that not only look good but feel seamless. Outside of coding, I’m always exploring new design trends and leveling up my skills to stay ahead in this ever-evolving field.
           </div>
 
-          <div className="flex md:w-1/2 -bg-red-900">
-            <div className="w-1/2 img-1 ">
-              <img src={hussamImg} alt="Hussam photo" loading='lazy' className='w-full h-[300px] object-contain object-top' />
-            </div>
-            <div className="w-1/2 img-2 ">
-              <div className='relative cursor-not-allowed hussam-video group'>
-                <video src={hussamVideo} autoPlay loop muted></video>
-                <div className="absolute inset-0 flex items-center justify-center w-full text-3xl text-center text-white transition duration-300 opacity-0 bg-black/70 group-hover:opacity-100 backdrop-blur">
+          <div className="bg-red-900 ">
+              <div className='relative cursor-not-allowed group'>
+                <img src={hussamImg} alt="Hussam photo" loading='lazy' className='w-full h-[300px] object-contain ' />
+                <div className="-bg-green-900 absolute inset-0 flex items-center justify-center w-[full] text-3xl text-center text-white transition duration-300 opacity-0 bg-black/70 group-hover:opacity-100 backdrop-blur">
                   <p>Don't Touch it's Art</p>
                 </div>
               </div>
-            </div>
+
           </div>
- 
+
         </div>
 
       </div>

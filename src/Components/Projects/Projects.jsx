@@ -62,7 +62,7 @@ function Projects() {
           const { name, description, image, technologies, links } = project;
           return (
             <div className="relative group hover:bg-white transition duration-300" key={index}>
-              <a className='text-[6vw] block mb-3 -border-b hover:translate-x-5 group-hover:text-black transition duration-300' href={links.live} target='_blank'><span className='text-sm'>[{index}]</span> {name}</a>
+              <a className='text-[6vw] block mb-3 -border-b hover:translate-x-5 group-hover:text-black transition duration-300' href={links.live} target='_blank'><span className='text-sm'>[{index + 1}]</span> {name}</a>
               <img src={image} alt={name} loading='lazy' className='absolute top-0 right-0 z-10 w-1/2 transition duration-300 -translate-y-1/2 opacity-0 group-hover:opacity-100' />
 
 

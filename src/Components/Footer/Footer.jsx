@@ -27,7 +27,7 @@ function Footer() {
         <div className="flex flex-col pb-2 border-b-2 md:pb-0 md:order-3 md:border-b-0 md:border-l-2 md:pl-2">
           <a href="https://www.linkedin.com/in/hussamsalah399" target='_blank'>Linkedin</a>
           <a href="https://www.facebook.com/100008184736934" target='_blank'>Facebook</a>
-          <a href={cv} download>CV</a>
+          <a href={cv} download="Hussam_Salah_FrontEnd_CV.pdf">CV</a>
         </div>
 
         
