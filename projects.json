@@ -1,6 +1,28 @@
 {
     "data" : [
         {
+            "name" : "Freshcart E-commerce",
+            "description" : "Freshcart is a comprehensive e-commerce application built using React and Redux. The project aims to provide an easy-to-use and scalable online shopping platform.",
+            "technologies" : ["React", "Redux Toolkit", "React Router DOM", "Axios", "Bootstrap", "Formik", "Yup", "React Helmet", "React Hot Toast", "React Loader Spinner", "React Query", "React Slick", "FontAwesome"],
+            "image" : "https://res.cloudinary.com/dpeaw3rl5/image/upload/v1759311051/hussamsalah399.github.io_freshcart-ecommerce__dpywzh.png",
+            "links" : {
+                "github" : "https://github.com/HussamSalah399/freshcart-ecommerce",
+                "live" : "https://hussamsalah399.github.io/freshcart-ecommerce"
+            }
+        },
+        
+        {
+            "name" : "Smaily",
+            "description" : "A fully responsive bilingual website built with Next.js, React, and Tailwind CSS. Features lazy-loaded images for better performance, smooth Arabic-English language switching, and a contact form that sends data directly to Google Sheets.",
+            "technologies" : ["Next.js 15", "React 19", "Tailwind CSS 4", "next-intl (i18n)"],
+            "image" : "https://res.cloudinary.com/dpeaw3rl5/image/upload/v1759310622/smaily.vercel.app_en_rvbodr.png",
+            "links" : {
+                "github" : "https://github.com/HussamSalah399/Smaily",
+                "live" : "https://smaily.vercel.app"
+            }
+        },
+        
+        {
             "name" : "Disney Plus Clone",
             "description" : "This project aims to replicate the Disney Plus website using React and other web technologies. It includes features such as user authentication, browsing movies and shows, and viewing detailed information about each content item.",
             "technologies" : ["React JS", "Styled Components", "Redux", "Firebase"],
@@ -11,14 +33,15 @@
             }
         },
 
+        
         {
-            "name" : "Freshcart E-commerce",
-            "description" : "Freshcart is a comprehensive e-commerce application built using React and Redux. The project aims to provide an easy-to-use and scalable online shopping platform.",
-            "technologies" : ["React", "Redux Toolkit", "React Router DOM", "Axios", "Bootstrap", "Formik", "Yup", "React Helmet", "React Hot Toast", "React Loader Spinner", "React Query", "React Slick", "FontAwesome"],
-            "image" : "https://res.cloudinary.com/dpeaw3rl5/image/upload/v1732128624/project_kljek0.jpg",
+            "name" : "Elite Builders",
+            "description" : "A modern commercial construction website built with HTML, CSS, and JavaScript, designed to showcase Elite Builders Inc.'s services, projects, and expertise in the construction industry.",
+            "technologies" : ["HTML", "CSS", "JavaScript"],
+            "image" : "https://res.cloudinary.com/dpeaw3rl5/image/upload/v1759311858/hero_nvutrn.png",
             "links" : {
-                "github" : "https://github.com/HussamSalah399/freshcart-ecommerce",
-                "live" : "https://hussamsalah399.github.io/freshcart-ecommerce"
+                "github" : "https://github.com/HussamSalah399/Elite-Builders",
+                "live" : "https://hussamsalah399.github.io/Elite-Builders"
             }
         },
 
